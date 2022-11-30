@@ -8,6 +8,8 @@ public class Platform {
     Boolean steamOS;
     Boolean remixeMusic;
 
+    public Platform(){};
+
     public Platform(Boolean remixeMusic) {
         this.remixeMusic = remixeMusic;
     }
@@ -21,6 +23,13 @@ public class Platform {
         this.windows = windows;
         this.macOS = macOS;
         this.steamOS = steamOS;
+    }
+
+    public Platform(Boolean windows, Boolean macOS, Boolean steamOS, Boolean remixeMusic) {
+        this.windows = windows;
+        this.macOS = macOS;
+        this.steamOS = steamOS;
+        this.remixeMusic = remixeMusic;
     }
 
     public Boolean getWindows() {
